@@ -1,5 +1,4 @@
 import { sql } from '@/db';
-export const dynamic = 'force-dynamic'
 
 async function getVeriler() {
   try {
