@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { sql } from '@/db';
 
 async function getVeriler() {
@@ -9,6 +10,7 @@ async function getVeriler() {
     
     return { bolumler, sezonlar, yoneticilerListesi, ihlaller };
   } catch (error) {
+  
     console.error('Veriler çekilirken hata oluştu:', error);
     return { bolumler: [], sezonlar: [], yoneticilerListesi: [], ihlaller: [] };
   }
